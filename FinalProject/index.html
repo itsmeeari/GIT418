@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS/JS LINK -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script defer src="finalproject.js"></script>
+  <!-- JQUERY LINK -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <!-- FONT & ICON LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <title>The Moody Foodie</title>
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="/Users/arianalopez/Dropbox/Mac/Desktop/FinalProject/images/logo.png" alt="Moody Foodie Logo">
+    <h1>The Moody Foodie</h1>
+    <section id="icons">
+      <h5>icons</h5>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-user"></i>
+    </section>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#newrecipes">New Recipes</a></li>
+      <li><a href="#shoplist">Shopping List</a></li>
+      <li><a href="#recipeAPI">Recipe Book</a></li>
+    </ul>
+  </nav>
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>Welcome to The Moody Foodie – Where Every Flavor Tells a Story! </h2>
+    <p>At The Moody Foodie, we embrace the idea that our moods and food are deeply intertwined and founded by a group of
+      culinary enthusiasts who believe in the power of a good meal to turn any day around. Our platform is more than
+      just a recipe site—it's a celebration of the emotional journey food takes us on. Food is not just about taste;
+      it's about feelings, memories, and the magic of the moment. Whether you’re in need of comfort, a burst of energy,
+      a touch of nostalgia, or a spark of joy, The Moody Foodie is your go-to culinary companion. Our mission is to
+      provide you with the perfect recipe for every mood, occasion, and craving.
+      <br><br>
+      Personalized Cooking Experience:
+    <ul>
+      <li>Mood-Based Menus: Choose recipes not just by ingredients or cuisine, but by the emotional experience you seek.
+        From 'Comforting' to 'Energizing', 'Romantic' to 'Adventurous', our unique mood-based categorization lets you
+        find the perfect dish for every feeling.</li>
+      <li>Interactive Shopping List: Simplify your cooking journey with our interactive shopping list feature. As you
+        explore recipes, easily add ingredients to your personalized list, ensuring you have everything you need for
+        your mood-inspired culinary creations.</li>
+      <li>Ready to embark on a food journey? Head over to our Recipe Book and let your curiosity lead the way. With The
+        Moody Foodie, a delicious dining experience is just a search away. Bon appétit!</li>
+    </ul>
+    <p>At The Moody Foodie, every dish tells a story, and every flavor sparks an emotion. We invite you to dive into
+      this sensorial adventure, exploring recipes that do more than satisfy hunger—they resonate with your soul. Whether
+      you're looking for comfort food on a gloomy day, a refreshing summer cocktail, or a festive feast to lift the
+      spirits, The Moody Foodie is here to guide you through.
+      <br><br>
+      -The Moody Foodie Team 😋
+    </p>
+  </section>
+  <!-- JQUERY CAROUSEL -->
+  <section id="carousel">
+    <h2>Holiday Recipes</h2>
+    <section class="slides">
+      <h5>slides</h5>
+      <img src="images/christmas1.jpg" alt="hot chocolate with marshmallows in a mug">
+      <img src="images/christmas2.jpg" alt="gingerbread christmas cookies">
+      <img src="images/christmas3.jpg" alt="red Christmas macarons with snowflake-shaped icing on top">
+      <img src="images/christmas4.jpg" alt="thumbprint cookies with Hershey's kisses">
+      <img src="images/christmas5.jpg" alt="festive Christmas cocktails">
+      <img src="images/christmas11.jpg" alt="tamales being steamed in a pot">
+      <img src="images/christmas10.jpg" alt="pumpkin pie">
+      <img src="images/christmas9.jpg" alt="A spread of a holiday meal">
+      <img src="images/christmas8.jpg" alt="A spread of a holiday meal">
+      <img src="images/christmas7.jpg" alt="A holiday bundt cake">
+      <img src="images/christmas6.jpg" alt="charcuterie plate">
+    </section>
+  </section>
+  <!-- JQUERY ACCORDION -->
+  <section id="newrecipes">
+    <h2 class="new">New Recipes</h2>
+    <section class="image-accordion-container">
+      <h3>Ground Turkey Nachos</h3>
+      <img src="/Users/arianalopez/Dropbox/Mac/Desktop/FinalProject/images/nachos.jpg" alt="Nachos with a side of sour cream, guacamole, and pico de gallo">
+    </section>
+    <section id="accordion1">
+      <h4>Ingredients</h4>
+      <section>
+        For the Nachos:
+        <ul>
+          <li>1 tablespoon olive oil</li>
+          <li>1 pound ground turkey</li>
+          <li>1 medium onion, finely chopped</li>
+          <li>2 cloves garlic, minced</li>
+          <li>1 teaspoon ground cumin</li>
+          <li>1 teaspoon chili powder</li>
+          <li>1/2 teaspoon paprika
+          <li>Salt and pepper, to taste</li>
+          <li>1 bag of tortilla chips (about 10-12 ounces)</li>
+          <li>2 cups shredded cheese (cheddar, Monterey Jack, or a blend)</li>
+        </ul>
+        <br>For the Guacamole:
+        <ul>
+          <li>2 ripe avocados</li>
+          <li>1 small tomato, finely diced</li>
+          <li>1/4 cup finely chopped onion</li>
+          <li>1 jalapeño, finely chopped (optional)</li>
+          <li>Juice of 1 lime</li>
+          <li>Salt, to taste</li>
+        </ul>
+        <br>For the Pico de Gallo:
+        <ul>
+          <li>3 medium tomatoes, finely diced</li>
+          <li>1/2 cup finely chopped onion</li>
+          <li>1/4 cup chopped fresh cilantro</li>
+          <li>1 jalapeño, finely chopped (optional)</li>
+          <li>Juice of 1 lime</li>
+          <li>Salt, to taste</li>
+          <li>Sour cream</li>
+          <li>Jalapeños, sliced (optional)</li>
+          <li>Fresh cilantro, chopped (for garnish)</li>
+          <li>Lime wedges (for serving)</li>
+        </ul>
+      </section>
+      <h4>Prep & Cook Time</h4>
+      <section>
+        <p>
+          <strong>Prep Time:</strong>
+          <br>
+          <br>Ground Turkey Prep: 10 minutes (chopping and sautéing)
+          <br>Guacamole Prep: 10 minutes
+          <br>Pico de Gallo Prep: 10 minutes
+          <br>Assembling Nachos: 5 minutes
+          <br>
+          <br><strong>Cooking Time:</strong>
+          <br>
+          <br>Cooking Ground Turkey: 10 minutes
+          <br>Baking Nachos: 10 minutes
+          <br>Total Cooking Time: Approximately 20 minutes
+          <br><br>
+          <strong>Overall Time
+            Total Time (Prep + Cooking): Approximately 55 minutes</strong>
+        </p>
+      </section>
+      <h4>Instructions</h4>
+      <section>
+        Prepare the Ground Turkey:
+        <ol>
+          <li>Heat the olive oil in a large skillet over medium heat.</li>
+          <li>Add the chopped onion and garlic, sautéing until soft.</li>
+          <li>Add the ground turkey, breaking it up with a spoon. Cook until browned.</li>
+          <li>Stir in cumin, chili powder, paprika, salt, and pepper.</li>
+          <li>Cook for another 2-3 minutes. Set aside.</li>
+        </ol>
+        <br>
+        Make the Guacamole:
+        <ol>
+          <li>Halve the avocados and remove the pits. Scoop the flesh into a bowl.</li>
+          <li>Add the tomato, onion, jalapeño (if using), and lime juice.</li>
+          <li>Mash everything together with a fork—season with salt. Set aside.</li>
+        </ol>
+        <br>
+        Prepare the Pico de Gallo:
+        <ol>
+          <li>In a separate bowl, combine tomatoes, onion, cilantro, jalapeño (if using), and lime juice.</li>
+          <li>Season with salt. Set aside.</li>
+        </ol>
+        <br>
+        Assemble the Nachos:
+        <ol>
+          <li>Preheat your oven to 375°F (190°C).</li>
+          <li>Spread half of the tortilla chips in a large ovenproof dish or on a baking sheet.</li>
+          <li>Sprinkle half of the cooked turkey and half of the cheese over the chips.</li>
+          <li>Repeat with the remaining chips, turkey, and cheese.</li>
+          <li>Bake in the preheated oven for about 10 minutes, or until the cheese is melted and bubbly.</li>
+        </ol>
+        <br>
+        Serve:
+        <ol>
+          <li>Remove the nachos from the oven.</li>
+          <li>Serve immediately with the guacamole, pico de gallo, and sour cream on the side.</li>
+          <li>Garnish with jalapeños, fresh cilantro, and lime wedges if desired.</li>
+        </ol>
+      </section>
+    </section>
+    <section class="image-accordion-container">
+      <h3>Salmon & Cream Cheese Sushi</h3>
+      <img src="/Users/arianalopez/Dropbox/Mac/Desktop/FinalProject/images/sushi.jpg" alt="salmon and cream cheese sushi roll">
+    </section>
+    <section id="accordion2">
+      <h4>Ingredients</h4>
+      <section>
+        For Sushi Roll:
+        <ul>
+          <li>2 cups sushi rice</li>
+          <li>3 cups water</li>
+          <li>1/3 cup rice vinegar</li>
+          <li>2 tablespoons sugar</li>
+          <li>1 teaspoon salt</li>
+          <li>4 sheets nori (seaweed)</li>
+          <li>200g fresh salmon (sashimi grade), thinly sliced</li>
+          <li>100g cream cheese, cut into strips</li>
+        </ul>
+        For Topping:
+        <ul>
+          <li>Additional 100g fresh salmon (sashimi grade), thinly sliced</li>
+          <li>2 green onions, finely chopped</li>
+        </ul>
+        For Ponzu Sauce:
+        <ul>
+          <li>1/4 cup soy sauce</li>
+          <li>2 tablespoons lemon juice</li>
+          <li>1 tablespoon mirin</li>
+          <li>1 teaspoon sugar</li>
+          <li>1/2 teaspoon grated ginger</li>
+        </ul>
+        Equipment:
+        <ul>
+          <li>Bamboo sushi mat</li>
+          <li>Sharp knife</li>
+          <li>Rice cooker or pot</li>
+        </ul>
+      </section>
+      <h4>Prep and Cook Time</h4>
+      <section>
+        <p>
+          <br><strong>Prep Time:</strong> 30 minutes
+          <br>
+          <br><strong>Cook Time:</strong> 30 minutes
+          <br>
+          <br>
+          <strong>Overall Time
+            Total Time (Prep + Cooking): Approximately 1 hour</strong>
+          </p>
+      </section>
+      <h4>Instructions</h4>
+      <section>
+        <p>
+          <br>1. Cook the Sushi Rice:
+          <br>Rinse the rice under cold water until the water runs clear.
+          <br>Cook the rice in a rice cooker or pot with 3 cups of water.
+          <br>Once cooked, let it sit for about 10 minutes.
+          <br>Gently fold in the rice vinegar, sugar, and salt.
+          <br>
+          <br>2. Prepare the Ingredients:
+          <br>Slice the salmon, cream cheese, cucumber, and avocado.
+          <br>Chop the green onions.
+          <br>Mix the ingredients for the ponzu sauce in a small bowl.
+          <br>
+          <br>3. Assemble the Sushi Rolls:
+          <br>Place a sheet of nori on the bamboo mat.
+          <br>Spread a thin layer of rice over the nori, leaving about an inch at the top.
+          <br>Lay salmon slices, cream cheese strips, cucumber, and avocado on the rice.
+          <br>Using the bamboo mat, roll the sushi tightly from the bottom.
+          <br>
+          <br>4. Top the Rolls:
+          <br>Place additional salmon slices on top of each roll.
+          <br>Use the bamboo mat to gently shape the roll and press the toppings in place.
+          <br>
+          <br>5. Cut and Serve:
+          <br>Using a sharp, wet knife - cut the sushi roll into bite-sized pieces.
+          <br>Place the sushi on a plate and sprinkle with green onions.
+          <br>Drizzle with ponzu sauce before serving.
+        </p>
+      </section>
+    </section>
+
+    <section class="image-accordion-container">
+      <h3>Dairy-Free Creamy Garlic Salmon</h3>
+      <img src="/Users/arianalopez/Dropbox/Mac/Desktop/FinalProject/images/salmon.jpg" alt="creamy broth with salmon in a black skillet">
+    </section>
+    <section id="accordion3">
+      <h4>Ingredients</h4>
+      <section>
+        <ul>
+          <li>4 salmon fillets</li>
+          <li>Salt and pepper, to taste</li>
+          <li>2 tablespoons olive oil</li>
+          <li>4 cloves garlic, minced</li>
+          <li>1 onion, diced</li>
+          <li>1 cup coconut milk (full-fat for a creamier texture)</li>
+          <li>1 tablespoon cornstarch (optional, to thicken the sauce)</li>
+          <li>1 tablespoon water (if using cornstarch)</li>
+          <li>Juice of half a lemon</li>
+          <li>1 teaspoon paprika (optional for color and a bit of smokiness)</li>
+          <li>Fresh herbs like dill or parsley, chopped</li>
+          <li>Lemon slices, for garnish</li>
+        </ul>
+      </section>
+      <h4>Prep and Cook Time</h4>
+      <section>
+        <p>
+          <strong>Prep Time:</strong> 5 minutes
+          <br><strong>Cook Time:</strong>25 minutes
+          <br><strong>Total Time:</strong>30 minutes
+        </p>
+      </section>
+      <h4>Instructions</h4>
+      <section>
+        Prep:
+        <ol>
+          <li>Season the salmon fillets with salt, pepper, and paprika (if using).</li>
+          <li>If you choose to thicken the sauce with cornstarch, mix the cornstarch with 1 tablespoon of water in a
+            small bowl to create a slurry. Set aside.</li>
+        </ol>
+        <br>
+        Cook:
+        <ol>
+          <li>Heat the olive oil in a large skillet over medium-high heat. Add the salmon fillets and cook for about 3-4
+            minutes on each side or until golden and cooked to your preference. Remove the salmon from the skillet and
+            set aside.</li>
+          <li>In the same skillet, add a bit more oil if needed, and sauté the garlic and onions until fragrant and the
+            onions are translucent about 2-3 minutes.</li>
+          <li>Lower the heat to medium and pour in the coconut milk, stirring well. If you’re using the cornstarch
+            slurry, add it to the pan now, stirring constantly until the sauce thickens to your liking.</li>
+          <li>Add the lemon juice and adjust the seasoning with more salt and pepper if needed.</li>
+          <li>Return the salmon fillets to the skillet, pour the sauce over them, and cook for another 5 minutes to let
+            the flavors meld.</li>
+          <li>Garnish with fresh herbs and lemon slices before serving.</li>
+        </ol>
+        <br>
+        Serve the creamy garlic salmon with a side of steamed vegetables, over rice, or with a fresh salad for a
+        complete meal.
+        <br>
+        Notes:
+        <ul>
+          <li>Ensure your coconut milk is unsweetened and doesn't contain any added flavors that might conflict with the
+            dish.
+          <li>You can also add a splash of white wine to the sauce before adding the coconut milk for an extra layer of
+            flavor.
+          <li>If you have more time and want to infuse the salmon with more flavor, you can marinate it in a mixture of
+            olive oil, lemon juice, garlic, and herbs for about 15-30 minutes before cooking.
+        </ul>
+      </section>
+    </section>
+
+    <section class="image-accordion-container">
+      <h3>Simple Tonkatsu Ramen</h3>
+      <img src="/Users/arianalopez/Dropbox/Mac/Desktop/FinalProject/images/ramen.jpg" alt="a bowl of tonkatsu ramen">
+    </section>
+    <section id="accordion4">
+      <h4>Ingredients</h4>
+      <section>
+        <ul>
+          <li>Tonkatsu Ramen Broth: 2 - We recommend the <a
+              href="https://www.target.com/p/ramen-soup-starter-chicken-broth-32oz-good-38-gather-8482/-/A-54581374">Good
+              & Gather Ramen Broth</a></li>
+          <li>Pork Belly Slices or Pork Loin: 4 thin slices</li>
+          <li>Soy Sauce: 2 tablespoons</li>
+          <li>Mirin: 1 tablespoon</li>
+          <li>Garlic: 2 cloves, minced</li>
+          <li>Ginger: 1 teaspoon, grated</li>
+          <li>Vegetable Oil: for frying</li>
+          <li>Eggs: 2</li>
+          <li>Green Onions: 2, finely chopped</li>
+          <li>Nori Seaweed Sheets: 2, cut into halves</li>
+          <li>Bamboo Shoots or Corn: for topping</li>
+          <li>Sesame Seeds: for garnish</li>
+          <li>Butter: 1 tablespoon (optional)</li>
+          <li>Chili Oil or Sesame Oil: for flavor (optional)</li>
+        </ul>
+      </section>
+      <h4>Prep and Cook Time</h4>
+      <section>
+        <p>
+          Preparation Time: 15 minutes
+          <br>Cook Time: 20 minutes
+          <br>Total Time: 35 minutes
+        </p>
+      </section>
+      <h4>Instructions</h4>
+      <section>
+        <Prepare the Toppings:
+        Pork: Marinate pork slices in a mixture of soy sauce, mirin, garlic, and ginger for 10 minutes. In a pan,
+        heat vegetable oil over medium heat and fry the pork until nicely browned on both sides. Set aside.
+        Eggs: Boil eggs for 6-7 minutes for a soft-boiled consistency, then place in ice water to stop cooking.
+        Peel and set aside.
+        Cook the Ramen:
+        Follow the instructions on your at-home tonkatsu ramen broth. Usually, this involves boiling the noodles
+        separately and mixing them with the soup base that is heated in another pot.
+        Assemble the Ramen:
+        Place cooked noodles in a bowl. Pour the hot soup over the noodles.
+        Add the fried pork slices, cut soft-boiled eggs in half, and place on top.
+        Garnish with green onions, a piece of nori, bamboo shoots, or corn.
+        Add a drizzle of chili oil or sesame oil if desired.
+        Tips:
+        <ul>          
+          <li>Quality of Broth: Choose a good quality at-home tonkatsu ramen broth base.</li>
+          <li>Variations: Feel free to add other toppings like bean sprouts, bok choy, or mushrooms.</li>
+          <li>Vegetarian Option: Skip the pork and use tofu or extra vegetables. Look for a vegetarian ramen packet.
+          </li>
+          <li>Storing: It's best enjoyed fresh. However, you can store the broth and toppings separately in the
+            refrigerator for up to 2 days.</li>
+        </ul>
+      </section>
+    </section>
+  </section>
+
+  <!-- RECIPE SEARCH -->
+  <section id="recipeAPI">
+    <h2>Recipe Book</h2>
+    <p>The Moody Foodie Recipe Book is a tool that allows you to effortlessly explore a vast array of recipes. The Moody
+      Foodie provides you access to a diverse collection of dishes, ensuring you find the perfect recipe to match your
+      mood, occasion, or dietary preference.</p>
+    <form>
+      <label for="searchRecipe">I feel like eating:</label>
+      <br>
+      <span class="message"></span>
+      <input type="text" name="searchRecipe" id="searchRecipe">
+      <input type="submit" name="mySubmit" id="mySubmit" value="Search">
+    </form>
+    <section id="results">
+      <h5>results</h5>
+    </section>
+  </section>
+
+  <!-- SHOPPING LIST -->
+  <section id="shoplist">
+    <h2>Shopping List</h2>
+    <p>Our interactive shopping list is a personalized tool designed to make your recipe exploration and cooking process
+      as seamless as possible. As you browse through our mood-based menus and select recipes, you can conveniently add
+      all the necessary ingredients to your custom shopping list with just a click. You can also print the list before
+      you head out to the grocery store.</p>
+    <section id="controls">
+      <h5>controls</h5>
+      <input type="text" id="itemInput" placeholder="Add item">
+      <button id="addBtn">Add Item</button>
+      <button id="clearBtn">Clear List</button>
+    </section>
+
+    <section id="paper">
+      <h5>paper</h5>
+      <ol id="groceryList"></ol>
+    </section>
+    <button id="printBtn">Print List</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>Moody Foodie &copy; 2023. By Ariana Lopez</footer>
+</body>
+
+</html>

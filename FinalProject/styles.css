@@ -1,0 +1,278 @@
+body {
+  font-family: "Alata", sans-serif;
+  background-color: #e1c5be;
+  font-size: 16px;
+  width: 1280px;
+}
+
+/* HEADER STYLES */
+#logo {
+  padding: 6px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#icons {
+  padding: 6px;
+}
+
+#icons i {
+  font-size: 24px;
+  padding: 6px;
+}
+
+/* NAV STYLES */
+nav {
+  background-color: #cf9299;
+  padding: 8px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  text-decoration: none;
+  padding: 8px;
+  color: black;
+}
+
+/* CAROUSEL STYLES */
+#carousel {
+  padding: 15px;
+  width: 1280px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  width: 1280px;
+}
+
+#carousel img {
+  height: auto;
+  padding: 6px;
+  flex: 0 0 auto;
+}
+
+/* ABOUT SECTION */
+#about h2 {
+  text-align: center;
+}
+
+#about {
+  padding: 8px 6px 8px 6px;
+  background-color: #c88f81;
+  border-radius: 10px;
+  margin: 8px;
+}
+
+#about h3,
+#about p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* RECIPES SECTION */
+#recipes {
+  background-color: #b65c67;
+  border-radius: 10px;
+  padding: 8px 6px 8px 6px;
+  width: 100%;
+}
+
+#recipes h2 {
+  padding-left: 10px;
+  text-align: center;
+}
+
+/* NEW RECIPES STYLES */
+#newrecipes h2 {
+  color: black;
+  padding-left: 10px;
+}
+
+#newrecipes h3 {
+  color: white;
+}
+
+#newrecipes {
+  background-color: #b65c67;
+  padding: 6px 6px 16px 6px;
+  border-radius: 4px;
+}
+
+/* JQUERY ACCORDION STYLES */
+#accordion1,
+#accordion2,
+#accordion3,
+#accordion4 {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.ui-accordion .ui-accordion-header {
+  color: black;
+  padding: 12px;
+}
+
+.ui-accordion .ui-accordion-content {
+  color: black;
+  border: 1px solid #cf9299;
+  padding: 16px;
+  overflow: auto;
+}
+
+.ui-accordion .ui-accordion-header-active {
+  background-color: #e1c5be;
+  color: black;
+}
+
+.ui-accordion .ui-accordion-header:hover {
+     color: #b65c67;
+}
+.image-accordion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 80%;
+  height: auto;
+}
+
+/* RECIPE SEARCH STYLES */
+#recipeAPI {
+  background-color: #cf9e92;
+  border-radius: 4px;
+  padding: 6px 6px 6px 6px;
+  margin: 6px;
+}
+
+#recipeAPI h2,
+#recipeAPI p {
+  text-align: center;
+}
+
+label, #searchRecipe, #mySubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+} 
+
+#searchRecipe {
+  margin-bottom: 6px;
+}
+
+#mySubmit {  
+  color: #b65c67;
+  border-radius: 3px;
+}
+
+#results {
+  background-color: #cf9e92;
+  padding-bottom: 8px;
+}
+
+#results ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#results li a {
+  text-decoration: none;
+  padding: 4px;
+  color: black;
+}
+
+/* SHOPPING LIST STYLES */
+#shoplist {
+  background-color: #b65c67;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#shoplist p {
+  text-align: center;
+}
+
+#shoplist input {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#paper {
+  background-color: #e1c5be;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 0.5px solid #d3949b;
+  font-family: "Courier New", Courier, monospace;
+  min-height: 300px;
+}
+
+#groceryList {
+  list-style-position: inside;
+}
+
+#shoplist button {
+  margin: 6px;
+  background-color: #e1c5be;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* PRINT SHOPPING LIST */
+@media print {
+  body {
+    visibility: hidden;
+  }
+
+  #paper,
+  #paper {
+    visibility: visible;
+  }
+
+  #paper {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: #cf9299;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* SEMANTIC HEADINGS */
+h5 {
+  display: none;
+}
